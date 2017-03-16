@@ -1,15 +1,28 @@
-#area
+body
+	min-height: 1200px
+.container-flex
+	display: flex
+	margin: 50px auto
+	max-width: 1200px
+	height: 800px
+	justify-content: center
+	
+#whole_map
 	width: 800px
 	height: 747px
 	position: relative
+	
+	@media (max-width: 992px)
+		transform: scale(0.5)
 	
 #map_poland
 	position: absolute
 	top: 0
 	left: 0
+	
 	z-index: 1
 
-#area
+#whole_map
 
 	li
 		position: absolute
@@ -17,5 +30,21 @@
 		left: 0
 		z-index: 2
 		display: none
+		list-style: none
+		
+		.describe
+			width: 300px
+			height: auto
+			
+			background-color: #ccc
+			font-size: 20px
+			color: #777
+			padding: 10px
+			line-height: 25px
+			
+			h3
+				text-align: center
+			p
+				text-align: justify
 
 

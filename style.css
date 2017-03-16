@@ -1,7 +1,20 @@
-#area {
+body {
+  min-height: 1200px; }
+
+.container-flex {
+  display: flex;
+  margin: 50px auto;
+  max-width: 1200px;
+  height: 800px;
+  justify-content: center; }
+
+#whole_map {
   width: 800px;
   height: 747px;
   position: relative; }
+  @media (max-width: 992px) {
+    #whole_map {
+      transform: scale(0.5); } }
 
 #map_poland {
   position: absolute;
@@ -9,11 +22,24 @@
   left: 0;
   z-index: 1; }
 
-#area li {
+#whole_map li {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
-  display: none; }
+  display: none;
+  list-style: none; }
+  #whole_map li .describe {
+    width: 300px;
+    height: auto;
+    background-color: #ccc;
+    font-size: 20px;
+    color: #777;
+    padding: 10px;
+    line-height: 25px; }
+    #whole_map li .describe h3 {
+      text-align: center; }
+    #whole_map li .describe p {
+      text-align: justify; }
 
 /*# sourceMappingURL=style.css.map */
